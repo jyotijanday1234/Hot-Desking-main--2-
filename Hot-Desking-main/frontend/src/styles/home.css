@@ -1,0 +1,68 @@
+
+.homeBg{
+    background-image: url('../assets/home-image.jpg');
+    /* filter: brightness(50%); */
+
+  /* Full height */
+    height: 100vh; 
+    position: absolute;
+    top: 0;    
+    z-index: -1;
+    width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-title{
+    /* border: 2px solid red; */
+    /* background-color: gainsboro; */
+    text-align: center;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+.home-heading{
+    color: white;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    padding:10px
+}
+.home-para{
+    color: white;
+    margin: 20px;
+    padding:10px
+}
+.home-btn{
+    margin: 20px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: coral;
+    cursor: pointer;
+}
+.home-heading h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .05em solid rgb(238, 236, 232); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 5s steps(100, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    10% { border-color: rgb(237, 236, 234); }
+  }

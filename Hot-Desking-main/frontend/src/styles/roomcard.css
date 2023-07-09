@@ -1,0 +1,39 @@
+.roomCardContainer{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 15px;
+     /* border: 2px solid orange; */
+     padding: 15px;
+      display: flex;
+      border-radius: 10px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.roomCardImg{
+    margin: 10px;
+    width:400px;
+    height: 250px;
+    border-radius: 10px;
+}
+.roomCardRoomName{
+    margin-bottom: 5px;
+}
+.roomCardRightContainer{
+/* border: 2px solid red; */
+margin: 10px;
+ width: 50%;
+}
+.roomCardRightContainer p{
+    border: 1.5px solid coral;
+    background-color: lightgreen;
+    border-radius: 20px;
+    text-align: center;
+}
+.roomCardbtn{
+    margin-top: 130px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: coral;
+    cursor: pointer;
+}
+.roomCardbtn:hover{
+    background-color: rgb(234, 76, 19);
+}

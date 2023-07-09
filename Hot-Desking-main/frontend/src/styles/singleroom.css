@@ -1,0 +1,131 @@
+
+.srMainContainer{
+  background-color:rgb(195, 168, 195);
+  height: 100vh;
+  overflow:hidden;
+}
+.srRoomName{
+  color: rgb(230, 14, 14);
+  padding-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.srContainer{
+  margin-left:20px ;
+  /* margin: 40px; */
+  /* border: 2px solid red; */
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+  display: flex;
+}
+.srImg{
+  margin: 10px;
+  border-radius: 6px;
+  width: 500px;
+  height: 405px;
+}
+.srRoomDetails{
+  /* border: 2px solid green; */
+  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+  width: 600px;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.srRoomInfo{
+  border: 1px solid red;
+  background-color: lightgreen;
+  border-radius: 20px;
+  text-align: center;
+  /* font-weight: bold; */
+  /* color: white; */
+}
+.srTotalAmount{
+  margin-left: 130px;
+  width: 300px;
+  border: 1px solid red;
+  background-color: lightgreen;
+  border-radius: 10px;
+  text-align: center;
+}
+.srRoomDetails p{
+  margin: 10px;
+}
+.srBookingDetails{
+  /* border: 2px solid coral; */
+  background-color: white;
+  margin-top: 10px;
+    border-radius:20px ;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+
+}
+.srBookingDetailsHeading{
+  /* margin-left:5px ; */
+  text-align: center;
+  padding: 5px;
+}
+.srTimingInfo{
+  display: flex;
+  margin: 2px;
+  padding: 2px;
+}
+.srTimingInfo label{
+  margin: 5px;
+  padding: 5px;
+}
+.srTimingInfo input{
+  margin: 5px;
+  padding: 5px;
+}
+.srForm{
+  overflow:auto;
+  margin: 5px;
+  padding: 5px;
+  height: 160px;
+}
+.srForm h5{
+  text-align: center;
+}
+.form-inline {  
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  .form-inline label {
+    margin: 5px 10px 5px 0;
+  }
+
+  .form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+
+  .sr-button-section {
+    /* margin: auto; */
+    text-align: center;
+  }
+  .srbutton {
+    padding: 5px 20px;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+    cursor: pointer;
+  }
+
+  .srbutton:hover {
+    background-color: royalblue;
+  }
+
+  .remove {
+    background-color: rgb(192, 53, 53);
+  }
+  .remove:hover {
+    background-color: rgb(187, 43, 43);
+  }

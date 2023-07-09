@@ -1,0 +1,60 @@
+.bD-container{
+    /* background-color: lightgray; */
+    text-align: center;
+    /* margin-top: 10rem; */
+    background-image: url('../assets/deskBooking.jpg');
+    /* filter: brightness(50%); */
+
+  /* Full height */
+    height: 100vh; 
+    position: absolute;
+    top: 0;    
+    z-index: -1;
+    width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bd-sub-container-1{
+    margin-top: 6rem;
+    color: white;
+}
+.bD-para{
+    padding: 10px;
+}
+.sub-container-2{
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 1) 0px 50px 100px -20px, rgba(0, 0, 0, 1) 0px 30px 60px -30px, rgba(10, 37, 64, 1) 0px -2px 6px 0px inset;    
+    padding: 20px;
+    border-radius: 20px;
+    width: 70%;
+    margin: auto;
+}
+
+.dates-container{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 50px; */
+}
+
+.search-btn{
+    border-radius: 50px !important;
+    width: 40%;
+    margin: 15px !important;
+    padding: 10px 100px !important
+}
+
+.location-input{
+    background-color: white;
+    border: none !important;
+    margin-block: 0em 1.5em;
+    width: 100% !important;
+}
+
+.date-picker{
+    background-color: white;
+}
