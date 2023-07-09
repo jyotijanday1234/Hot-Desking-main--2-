@@ -15,7 +15,7 @@ router.get('/getAllUsers',async(req,res)=>{
 		return res.status(500).send(error)
 	}
 })
-console.log(res)
+
 
 //To get Single Users
 router.get('/getSingleUsers/:userId',async(req,res)=>{
