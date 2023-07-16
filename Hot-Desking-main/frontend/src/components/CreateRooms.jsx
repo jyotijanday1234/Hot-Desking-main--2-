@@ -5,6 +5,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import axios from 'axios'
 import { useState } from 'react';
+import Swal from 'sweetalert2'
 import env from '../env.json'
 const CreateRooms = () => {
   const [error, setError] = useState("");
@@ -16,6 +17,7 @@ const CreateRooms = () => {
             roomName : data.get('roomName'),
             roomSize : data.get('roomSize'),
             location: data.get('location'),
+            rentPerHr: data.get('rentPerHr'),
             image: data.get('image'),
           }
         const base64 = await convertToBase64(body.image)
@@ -26,8 +28,10 @@ const CreateRooms = () => {
             const url = env.backend_url_room + '/createrooms'
             const response = await axios.post(url,body)
             setMsg(response.data.message)
-            console.log('resp:',response.data.message);
-            // navigate('/login')
+            Swal.fire({
+              icon: 'success',
+              title: 'Room Booked Successfully',
+             })
          } catch (error) {
             if (
                 error.response &&
@@ -72,6 +76,16 @@ const CreateRooms = () => {
                   label="Location"
                   name="location"
                   autoComplete="location"
+                />
+              </Grid>
+              <Grid item xs={4}>
+                <TextField
+                  required
+                  fullWidth
+                  id="rentPerHr"
+                  label="Rent Per Hour"
+                  name="rentPerHr"
+                  autoComplete="rentPerHr"
                 />
               </Grid>
               <Grid item xs={4}>

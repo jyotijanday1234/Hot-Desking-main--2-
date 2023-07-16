@@ -208,7 +208,7 @@ const SingleRoom = () => {
                             <StripeCheckout
         token={onToken}
         currency='INR'
-        amount={  100}
+        amount={  totalAmount * 100}
         stripeKey="pk_test_51NRyzPH4DlHcvcxtZCskx8wSL7RGcZcoiwpdXRquBe7fxiGOGqyrSQjylq48t5p21Yy3kGKlOKCQpyei2n69YqFr00NjJdPbAR"
     > <button className="srbutton submit" type="submit">Pay Now</button></StripeCheckout>
                            
